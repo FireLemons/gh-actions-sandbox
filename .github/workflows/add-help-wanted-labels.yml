@@ -10,7 +10,7 @@ jobs:
     steps:
       - name: Add help wanted labels
         run: |
-        nodejs add-label-to-cards/index.js
+          nodejs add-label-to-cards/index.js
 
         #uses: rubyforgood/add-label-to-cards@v1
         #id: add-help-wanted-labels
