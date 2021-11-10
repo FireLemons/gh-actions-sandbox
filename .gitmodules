@@ -1,0 +1,4 @@
+[submodule "add-label-to-cards"]
+	path = add-label-to-cards
+	url = git@github.com:rubyforgood/add-label-to-cards.git
+  branch = add_column_name_support
