@@ -10,6 +10,7 @@ jobs:
     name: Add help wanted labels
     steps:
       - uses: actions/checkout@main
+          submodules: 'true'
       - uses: ./add-label-to-cards/
         id: add-help-wanted-labels
         name: Add help wanted labels
