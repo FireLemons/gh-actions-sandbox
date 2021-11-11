@@ -11,9 +11,8 @@ jobs:
     steps:
       - name: Add help wanted labels
 
-        uses: actions/checkout@v2
-        uses: ./add-label-to-cards/
-        id: add-help-wanted-labels
+      - uses: actions/checkout@v2
+      - uses: ./add-label-to-cards/
         with:
           token: ${{secrets.GITHUB_TOKEN}}
           label_to_add: 'Help Wanted'
