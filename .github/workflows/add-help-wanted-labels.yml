@@ -10,11 +10,10 @@ jobs:
     name: Add help wanted labels
     steps:
       - name: Add help wanted labels
-        run: |
-          nodejs add-label-to-cards/index.js
 
-        #uses: rubyforgood/add-label-to-cards@v1
-        #id: add-help-wanted-labels
+        uses: actions/checkout@v2
+        uses: ./add-label-to-cards/
+        id: add-help-wanted-labels
         with:
           token: ${{secrets.GITHUB_TOKEN}}
           label_to_add: 'Help Wanted'
