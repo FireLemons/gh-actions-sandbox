@@ -15,9 +15,9 @@ jobs:
         with:
           columns_labels: >
             { 
-              column_name: 'To do',
-              labels: ['Help Wanted'],
-              project_name: 'Test'
+              "column_name": "To do",
+              "labels": ["Help Wanted"],
+              "project_name": "Test"
             }
 
           token: ${{secrets.GITHUB_TOKEN}}
