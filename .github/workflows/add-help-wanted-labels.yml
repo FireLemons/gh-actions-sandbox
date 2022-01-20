@@ -27,6 +27,15 @@ jobs:
               },
               {
                 "column_name": "To do",
+                "project_name": "Test"
+              },
+              {
+                "column_name": "To do",
+                "labels": null,
+                "project_name": "Test"
+              },
+              {
+                "column_name": "To do",
                 "labels": [3],
                 "project_name": "Test"
               }
