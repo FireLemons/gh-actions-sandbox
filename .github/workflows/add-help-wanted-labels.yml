@@ -38,7 +38,28 @@ jobs:
                 "column_name": "To do",
                 "labels": [3],
                 "project_name": "Test"
-              }
+              },
+              {
+                "column_name": "",
+                "labels": ["Empty Str Columns"],
+                "project_name": "Test"
+              },
+              {
+                "labels": ["Not Enough Column Info"],
+                "project_name": "Test"
+              },
+              {
+                "column_id" : 1234567,
+                "column_name": "To do",
+                "labels": ["All column identifiers"],
+                "project_name": "Test"
+              },
+              {
+                "column_id" : null,
+                "column_name": "To do",
+                "labels": ["Partially invalid column ids"],
+                "project_name": "Test"
+              },
             ]
           token: ${{secrets.GITHUB_TOKEN}}
           #          column_id: '16739169'
