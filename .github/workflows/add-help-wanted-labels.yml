@@ -21,6 +21,11 @@ jobs:
                 "project_name": "Test"
               },
               {
+                "column_name": "Column that doesn't exist",
+                "labels": ["Help Wanted"],
+                "project_name": "Test"
+              },
+              {
                 "column_name": "To do",
                 "labels": ["Help Wanted", null, 12, "test"],
                 "project_name": "Test"
