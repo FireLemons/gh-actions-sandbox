@@ -2,3 +2,6 @@
 	path = add-label-to-cards
 	url = git@github.com:rubyforgood/add-label-to-cards.git
   branch = add_column_name_support
+[submodule "remove-label-from-cards"]
+	path = remove-label-from-cards
+	url = git@github.com:rubyforgood/remove-label-from-cards.git
