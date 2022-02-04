@@ -1,0 +1,25 @@
+on:
+  workflow_dispatch:
+
+jobs:
+  add_help_wanted_labels:
+    runs-on: ubuntu-latest
+    name: Add help wanted labels
+    steps:
+      - uses: actions/checkout@main
+        with:
+          submodules: 'true'
+      - uses: ./remove-label-from-cards
+        id: remove-label-from-cards
+        name: Remove Labels
+        with:
+          columns_labels: >
+            [
+              {
+                "column_name": "To do",
+                "labels": ["Help Wanted"],
+                "project_name": "Test"
+              }
+            ]
+          token: ${{secrets.GITHUB_TOKEN}}
+          #          column_id: '16739169'
