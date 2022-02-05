@@ -4,7 +4,7 @@ on:
 jobs:
   add_help_wanted_labels:
     runs-on: ubuntu-latest
-    name: Add help wanted labels
+    name: Remove Labels
     steps:
       - uses: actions/checkout@main
         with:
