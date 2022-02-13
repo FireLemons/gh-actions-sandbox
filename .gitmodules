@@ -5,3 +5,6 @@
 [submodule "remove-label-from-cards"]
 	path = remove-label-from-cards
 	url = git@github.com:rubyforgood/remove-label-from-cards.git
+[submodule "on-deploy"]
+	path = on-deploy
+	url = git@github.com:FireLemons/on-deploy.git
