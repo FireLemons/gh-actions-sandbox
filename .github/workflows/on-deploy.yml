@@ -1,0 +1,16 @@
+on:
+  workflow_dispatch:
+
+jobs:
+  on_deploy:
+    runs-on: ubuntu-latest
+    name: On Deploy
+    steps:
+      - uses: actions/checkout@main
+        with:
+          submodules: 'true'
+      - uses: ./on-deploy/
+        id: on-deploy
+        name: On Deploy
+        with:
+          token: ${{secrets.GITHUB_TOKEN}}
