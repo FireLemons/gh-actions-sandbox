@@ -13,4 +13,5 @@ jobs:
         id: on-deploy
         name: On Deploy
         with:
+          project_name: "Test"
           token: ${{secrets.GITHUB_TOKEN}}
