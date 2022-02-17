@@ -15,5 +15,5 @@ jobs:
         with:
           project_name: "Test"
           done_column_name: "X"
-          QA_column_name: "To Do"
+          QA_column_name: "To do"
           token: ${{secrets.GITHUB_TOKEN}}
