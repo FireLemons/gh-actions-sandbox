@@ -14,6 +14,7 @@ jobs:
         name: On Deploy
         with:
           project_name: "Test"
+          done_column_card_limit: "1"
           done_column_name: "X"
           QA_column_name: "To do"
           token: ${{secrets.GITHUB_TOKEN}}
