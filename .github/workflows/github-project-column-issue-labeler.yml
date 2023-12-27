@@ -1,0 +1,41 @@
+on:
+  workflow_dispatch:
+
+jobs:
+  label_issues:
+    runs-on: ubuntu-latest
+    name: Manage Issue Labels
+    steps:
+      - uses: actions/checkout@main
+        with:
+          submodules: 'true'
+      - uses: ./github-project-column-issue-labeler/
+        id: manage-project-issue-labels
+        name: Manage Project Issue Labels
+        with:
+          column_label_config: >
+            [
+              {
+                "columnName": "To do",
+                "labelingRules": [
+                  {
+                    "action": "ADD",
+                    "labels": [
+                      "Label1"
+                    ]
+                  }
+                ]
+              },
+              {
+                "columnName": "Nonexistant Column",
+                "labelingRules": [
+                  {
+                    "action": "REMOVE",
+                    "labels": [
+                      "abc"
+                    ]
+                  }
+                ]
+              }
+            ]
+          token: ${{secrets.GITHUB_TOKEN}}
