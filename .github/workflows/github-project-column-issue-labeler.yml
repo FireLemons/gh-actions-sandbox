@@ -13,29 +13,4 @@ jobs:
         id: manage-project-issue-labels
         name: Manage Project Issue Labels
         with:
-          column_label_config: >
-            [
-              {
-                "columnName": "To do",
-                "labelingRules": [
-                  {
-                    "action": "ADD",
-                    "labels": [
-                      "Label1"
-                    ]
-                  }
-                ]
-              },
-              {
-                "columnName": "Nonexistant Column",
-                "labelingRules": [
-                  {
-                    "action": "REMOVE",
-                    "labels": [
-                      "abc"
-                    ]
-                  }
-                ]
-              }
-            ]
           token: ${{secrets.GITHUB_TOKEN}}
