@@ -15,6 +15,8 @@ jobs:
         with:
           column_label_config: >
             [
-
+              3,
+              7,
+              null
             ]
           token: ${{secrets.GITHUB_TOKEN}}
