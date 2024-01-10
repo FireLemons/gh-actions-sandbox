@@ -15,8 +15,16 @@ jobs:
         with:
           column_label_config: >
             [
-              3,
-              7,
-              null
+              {},
+              {
+                "a": 3,
+                "b": "b"
+              },
+              {
+                "columnName": "AAAA"
+              },
+              {
+                "labelingRules": []
+              }
             ]
           token: ${{secrets.GITHUB_TOKEN}}
