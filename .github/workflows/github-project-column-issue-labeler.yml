@@ -21,10 +21,18 @@ jobs:
                 "b": "b"
               },
               {
-                "columnName": "AAAA"
+                "columnName": "String"
               },
               {
                 "labelingRules": []
+              },
+              {
+                "columnName": 3,
+                "labelingRules": []
+              },
+              {
+                "columnName": "Name",
+                "labelingRules": 3
               }
             ]
           token: ${{secrets.GITHUB_TOKEN}}
