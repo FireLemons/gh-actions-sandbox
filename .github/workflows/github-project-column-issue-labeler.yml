@@ -13,8 +13,5 @@ jobs:
         id: manage-project-issue-labels
         name: Manage Project Issue Labels
         with:
-          column_label_config: >
-            [
-
-            ]
+          column_label_config: string
           token: ${{secrets.GITHUB_TOKEN}}
