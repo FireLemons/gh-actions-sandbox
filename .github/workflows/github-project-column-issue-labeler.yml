@@ -55,7 +55,7 @@ jobs:
                 "columnName": "Name",
                 "labelingRules": [
                   {
-                    "action": "ADD,
+                    "action": "ADD",
                     "labels": {
                       "a": "a"
                     }
