@@ -23,48 +23,23 @@ jobs:
                 "columnName": "Name",
                 "labelingRules": [
                   {
-                  }
-                ]
-              },
-              {
-                "columnName": "Name",
-                "labelingRules": [
+                  },
                   {
                     "action": "ADD"
-                  }
-                ]
-              },
-              {
-                "columnName": "Name",
-                "labelingRules": [
+                  },
                   {
                     "labels": ["a", "b", "c"]
-                  }
-                ]
-              },
-              {
-                "columnName": "Name",
-                "labelingRules": [
+                  },
                   {
                     "action": 3,
                     "labels": ["a", "b", "c"]
-                  }
-                ]
-              },
-              {
-                "columnName": "Name",
-                "labelingRules": [
+                  },
                   {
                     "action": "ADD",
                     "labels": {
                       "a": "a"
                     }
-                  }
-                ]
-              },
-              {
-                "columnName": "Name",
-                "labelingRules": [
+                  },
                   {
                     "action": "Unsupported Action",
                     "labels": ["a", "b", "c"]
