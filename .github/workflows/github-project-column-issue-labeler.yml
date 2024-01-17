@@ -37,6 +37,10 @@ jobs:
               {
                 "columnName": "                 ",
                 "labelingRules": []
+              },
+              {
+                "columnName": "",
+                "labelingRules": []
               }
             ]
           token: ${{secrets.GITHUB_TOKEN}}
