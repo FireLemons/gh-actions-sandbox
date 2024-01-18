@@ -13,4 +13,27 @@ jobs:
         id: manage-project-issue-labels
         name: Manage Project Issue Labels
         with:
+          column_label_config: >
+            [
+              {
+                "columnName": "Name with whitespace ",
+                "labelingRules": [
+                  {
+                    "action": "ADD ",
+                    "labels": ["Help Wanted", "New"]
+                  },
+                  {
+                    "action": "ReMovE",
+                    "labels": ["Done ", "   Completed", "", 4]
+                  },
+                  {
+                    "action": "invalid action",
+                    "labels": ["a", "b"]
+                  }
+                ]
+              },
+              {
+                "columnName": "invalid column"
+              }
+            ]
           token: ${{secrets.GITHUB_TOKEN}}
