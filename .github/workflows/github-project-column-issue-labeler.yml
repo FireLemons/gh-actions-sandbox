@@ -15,36 +15,6 @@ jobs:
         with:
           column_label_config: >
             [
-              {
-                "columnName": "Name",
-                "labelingRules": []
-              },
-              {
-                "columnName": "Name",
-                "labelingRules": [
-                  {
-                  },
-                  {
-                    "action": "ADD"
-                  },
-                  {
-                    "labels": ["a", "b", "c"]
-                  },
-                  {
-                    "action": 3,
-                    "labels": ["a", "b", "c"]
-                  },
-                  {
-                    "action": "ADD",
-                    "labels": {
-                      "a": "a"
-                    }
-                  },
-                  {
-                    "action": "Unsupported Action",
-                    "labels": ["a", "b", "c"]
-                  }
-                ]
-              }
+
             ]
           token: ${{secrets.GITHUB_TOKEN}}
