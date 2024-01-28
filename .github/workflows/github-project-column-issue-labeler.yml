@@ -19,7 +19,7 @@ jobs:
                 "columnName": "Name with whitespace ",
                 "labelingRules": [
                   {
-                    "action": "ADD ",
+                    "action": "AdD",
                     "labels": ["Duplicate Label", "New"]
                   },
                   {
@@ -35,9 +35,6 @@ jobs:
                     "labels": ["DupliCAte Emoji 🐌", "Completed 1"]
                   }
                 ]
-              },
-              {
-                "columnName": "invalid column"
               }
             ]
           token: ${{secrets.GITHUB_TOKEN}}
