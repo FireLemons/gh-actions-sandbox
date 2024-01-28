@@ -13,22 +13,26 @@ jobs:
         id: manage-project-issue-labels
         name: Manage Project Issue Labels
         with:
-          column_label_config: >
+          column_label_config: >  
             [
               {
                 "columnName": "Name with whitespace ",
                 "labelingRules": [
                   {
                     "action": "ADD ",
-                    "labels": ["Help Wanted", "New"]
+                    "labels": ["Duplicate Label", "New"]
+                  },
+                  {
+                    "action": "ADD ",
+                    "labels": ["DuplIcate LaBeL    ", "Help Wanted"]
                   },
                   {
                     "action": "ReMovE",
-                    "labels": ["Done ", "   Completed", "", 4]
+                    "labels": ["Duplicate emoji 🐌 ", "   Completed"]
                   },
                   {
-                    "action": "invalid action",
-                    "labels": ["a", "b"]
+                    "action": "ReMOVE",
+                    "labels": ["DupliCAte Emoji 🐌", "Completed 1"]
                   }
                 ]
               },
