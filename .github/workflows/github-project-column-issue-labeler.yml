@@ -23,6 +23,10 @@ jobs:
                     "labels": ["Duplicate Label", "New"]
                   },
                   {
+                    "action": "SeT",
+                    "labels": ["This should not appear"]
+                  },
+                  {
                     "action": "ADD ",
                     "labels": ["DuplIcate LaBeL    ", "Help Wanted"]
                   },
@@ -33,6 +37,10 @@ jobs:
                   {
                     "action": "ReMOVE",
                     "labels": ["DupliCAte Emoji 🐌", "Completed 1"]
+                  },
+                  {
+                    "action": "  Set",
+                    "labels": ["This should appear", "🛩 duplicate", "🛩 duplicate", "alphabetically first"]
                   }
                 ]
               }
