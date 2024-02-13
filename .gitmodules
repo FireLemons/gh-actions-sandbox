@@ -8,6 +8,3 @@
 [submodule "on-deploy"]
 	path = on-deploy
 	url = git@github.com:FireLemons/on-deploy.git
-[submodule "github-project-column-issue-labeler"]
-	path = github-project-column-issue-labeler
-	url = https://github.com/FireLemons/github-project-column-issue-labeler.git
